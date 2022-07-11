@@ -14,7 +14,7 @@ set(UNICORN_BUILD_SHARED OFF CACHE INTERNAL "Disable shared unicorn build!")
 FetchContent_Declare(
   unicorn
   GIT_REPOSITORY https://github.com/unicorn-engine/unicorn.git
-  GIT_TAG        185a6fec9eaaa40955e274dcaa09c4977ff7ffee
+  GIT_TAG        6c1cbef6ac505d355033aef1176b684d02e1eb3a # 2.0
   GIT_SUBMODULES ""
 )
 FetchContent_MakeAvailable(unicorn)

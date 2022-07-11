@@ -743,6 +743,13 @@ namespace uc {
                 return {(Error)error};
             }
 
+            //! @brief Invalidate all translation blocks.
+            Result<> flush_tlb() const noexcept {
+                using namespace ffi;
+                auto const error = uc_ctl_flush_tlb(_uc);
+                return {(Error)error};
+            }
+
             //! @brief Invalidate a tb cache at a specific range.
             //!
             //! @param range of tb cache.
